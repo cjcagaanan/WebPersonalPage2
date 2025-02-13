@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Justin Cyril C. Caga-anan</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+    overflow-x: hidden;
+  }
+
+  .container {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  /* Sidebar - Glassmorphism effect */
+  .sidebar {
+    width: 280px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 4px 0px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    backdrop-filter: blur(12px);
+    transition: all 0.3s ease;
+  }
+
+  .sidebar a {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    margin: 10px 0;
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    transition: all 0.3s;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .sidebar a:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.08);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+  }
+
+  .main-content {
+    flex: 1;
+    padding: 40px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+  }
+
+  .main-content h2 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color: #ffcc00;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .favorites p {
+    font-size: 1.2rem;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 12px;
+    border-radius: 10px;
+    margin: 10px 0;
+    transition: 0.3s;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.3);
+  }
+
+  .favorites p:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+    box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.5);
+  }
+
+  .footer {
+    background: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    margin-top: 20px;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .sidebar {
+      width: 90%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="sidebar">
+    <a href="index.html">About Me</a>
+    <a href="subjectst.html">Subjects Taken</a>
+    <a href="Enrolled.html">Enrolled</a>
+    <a href="contactme.html">Contact Me</a>
+    <a href="favorites.html">My Favorites</a>
+    <a href="gallery.html">Gallery</a>
+  </div>
+
+  <div class="main-content">
+    <h2> My Favorites </h2>
+    <div class="favorites">
+      <p><strong> Favorite Book:</strong> Harry Potter – I love this book because of its magical world, exciting adventures, and the strong friendships between the characters.</p>
+      <p><strong> Favorite Series:</strong> Prison Break – I enjoy this series because of its intense storyline, clever strategies, and unexpected plot twists.</p>
+      <p><strong> Favorite Movie:</strong> The Notebook – I like this movie because of its emotional depth, strong characters, and how it beautifully portrays unconditional love.</p>
+      <p><strong> Favorite Hobby:</strong> Running – Running is my favorite hobby because it helps me stay active, clears my mind, and gives me time to think and relax.</p>
+      <p><strong> Favorite Car:</strong> Porsche GT3 RS – I love this car because of its sleek design, powerful engine, and the thrill of speed it offers.</p>
+      <p><strong> Favorite Destination:</strong> Palawan – I want to visit Palawan because of its paradise-like scenery, peaceful environment, and the chance to explore nature at its finest.</p>
+      <p><strong> Favorite Food:</strong> Carbonara – I enjoy Carbonara because of its creamy, cheesy sauce and the perfect balance of flavors from bacon, eggs, and parmesan.</p>
+      <p><strong> Favorite Artist:</strong> Daniel Caesar – His music is soulful and emotional, with deep lyrics that resonate with real-life experiences.</p>
+      <p><strong> Favorite Sport:</strong> Basketball – I love basketball because it's fast-paced, competitive, and a great way to stay active while having fun with friends.</p>
+      <p><strong> Favorite Anime:</strong> Attack on Titan – This anime captivates me with its intense story, deep characters, and unpredictable plot twists.</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">© 2025 - 2026 ITP4 | All Rights Reserved</div>
+
+</body>
+</html>
